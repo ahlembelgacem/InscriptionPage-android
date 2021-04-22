@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95FFB300"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<EditText
+    android:id="@+id/nom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Entrez votre nom"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    >
+
+</EditText>
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre prénom"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/nom"
+
+        >
+    </EditText>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/prenom"
+        android:text="valider"
+        android:textStyle="italic"
+        >
+    </Button>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prenom"
+        android:layout_toLeftOf="@+id/btn1"
+        android:text="annuler"
+        android:textStyle="italic"
+        android:layout_alignTop="@id/btn2"
+        android:layout_marginRight="25dp">
+    </Button>
+    </RelativeLayout>
+
